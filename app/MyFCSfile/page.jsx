@@ -83,7 +83,13 @@ const MyFCSfile = () => {
 
         {/* Content */}
         <div className="flex-1 p-4 bg-gradient-to-r from-cyan-100 to-blue-300">
-          <h2 className="mb-4 text-black font-bold">List of FCS Files</h2>
+        <div className="flex items-center justify-between mb-4">
+            <h2 className="text-black font-bold">List of FCS Files</h2>
+            <button className="flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <FaFileAlt className="mr-2" />
+            Add FCS File
+            </button>
+        </div>
           <table className="w-full bg-white rounded-lg overflow-hidden shadow-md">
             <thead className="bg-gray-200">
               <tr>

@@ -20,7 +20,7 @@ const Canvas = ({ selectedPlot }) => {
   const canvasHeight = typeof window !== 'undefined' ? window.innerHeight : 0;
 
   return (
-    <div className="canvas-container w-full overflow-hidden">
+    <div className="canvas-container w-full overflow-hidden bg-white">
       <Stage
         width={canvasWidth}
         height={canvasHeight}
